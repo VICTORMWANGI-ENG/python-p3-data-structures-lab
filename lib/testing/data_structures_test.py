@@ -43,9 +43,9 @@ class TestDataStructures:
         sys.stdout = captured_out
         print_spicy_foods(TestDataStructures.SPICY_FOODS)
         sys.stdout = sys.__stdout__
-        assert(captured_out.getvalue() == "Green Curry (Thai) | Heat Level: 🌶🌶🌶🌶🌶🌶🌶🌶🌶\n" +
-            "Buffalo Wings (American) | Heat Level: 🌶🌶🌶\n" +
-            "Mapo Tofu (Sichuan) | Heat Level: 🌶🌶🌶🌶🌶🌶\n")
+        assert (captured_out.getvalue() == "Green Curry (Thai) | Heat Level: 🌶🌶🌶🌶🌶🌶🌶🌶🌶\n" +
+                "Buffalo Wings (American) | Heat Level: 🌶🌶🌶\n" +
+                "Mapo Tofu (Sichuan) | Heat Level: 🌶🌶🌶🌶🌶🌶\n")
 
     def test_get_spicy_food_by_cuisine(self):
         '''contains function get_spicy_food_by_cuisine that returns the food that matches a cuisine.'''
